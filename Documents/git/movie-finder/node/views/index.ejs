@@ -1,11 +1,65 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title><%= title %></title>
-    <link rel='stylesheet' href='/stylesheets/style.css' />
-  </head>
+  <% include ./partials/head %>
   <body>
+  <div class="center">
     <h1><%= title %></h1>
-    <p>Welcome to <%= title %></p>
+  </div>
+  <div class="center">  
+    <input id="search" type="text" name="search" placeholder="Find a movie...">
+    <button id="searchButton">Search</button>
+  </div>
+  <div class="wrapper">
+      <div id="poster"><img id="posterImg" src=""></div>
+      <div id="details">
+        <h2 id="title"></h2>
+        <span id="release"></span><br/>
+        <span id="genres"></span>
+        <p id="plot"></p>
+      </div>
+  </div>
+  <div class="wrapper">
+    <div id="votes">
+      <span id="voteAverage"></span>
+      <br/>
+      <span id="voteTotal"></span>
+    </div>
+    <div id="cast">
+      <!-- <button id="addWatchlist">Add to Watchlist</button> -->
+      <button id="addFavorites">Add to Favorites</button>
+    </div>
+  </div>
+  <div class="wrapper">
+    <div id="favorites">
+    <% if (data) { %>
+    </form>
+        <table>
+          <th>Title</th>
+          <th>Release Date</th>
+          <th>Genre(s)</th>
+          <th>Raiting</th>
+          <th>Comment</th>
+          <th>Action</th>
+          <tr>
+          <% data.forEach ( d => { %>
+            <tr data-id=<%=d.id%>>
+            <td data-id=<%=d.id%> class="f1"><%= d.title %></td>
+            <td data-id=<%=d.id%> class="f1"><%= d.release %></td>
+            <td data-id=<%=d.id%> class="f1"><%= d.genre %></td>
+            <td data-id=<%=d.id%> class="f1"><%= d.raiting %></td>
+            <td><input type="text" data-id=<%=d.id%> class="f1 e" 
+            value="<%= d.comment %>" placeholder="Answer..." readonly></td>
+            <td data-id=<%=d.id%> class="f1 b">
+            <span class="edit">EDIT</span>
+            <span class="delete">DELETE</span></td>
+          <% }) %>
+        </table>
+      <% } %>
+    </div>
+    </div>
+    <div class="wrapper">
+    <h4>You can only edit the comments.</h4>
+    </div>
+  <% include ./partials/scripts %>
   </body>
 </html>

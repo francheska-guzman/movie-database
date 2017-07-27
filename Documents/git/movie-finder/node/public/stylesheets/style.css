@@ -1,8 +1,312 @@
+/* Francheska Guzman */
+
+@import url('https://fonts.googleapis.com/css?family=Assistant:200|Source+Sans+Pro');
+
 body {
-  padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+	margin: 0 auto;
+	background: url("../images/black.png");
 }
 
-a {
-  color: #00B7FF;
+/* Headings, paragraphs, text... */
+
+h1 {
+	font-size: 50px;
+	font-family: 'Assistant', sans-serif;
+	color: #e2e2e2;
+}
+
+h2 {
+	font-size: 30px;
+	font-family: 'Assistant', sans-serif;
+	color: #353333;
+}
+
+h3 {
+	margin: 10px;
+}
+
+h4 {
+	font-size: 20px;
+	font-family: 'Assistant', sans-serif;
+	color: #FFFFFF;
+}
+
+p {
+	color: #1E1E1E;
+	font-family: 'Source Sans Pro', sans-serif;
+}
+
+ul {
+	list-style-type: none;
+}
+
+/* Input */
+
+input[type=text] {
+	width: 300px;
+	padding: 10px;
+	border: 1px solid #D1D1D1;
+	border-radius: 4px;
+	background: #f7f7f7;
+	font-size: 18px;
+	font-family: 'Assistant', sans-serif;
+}
+
+input.e[type="text"] {
+	width: auto;
+	border: none;
+	font-family: 'Assistant', sans-serif;
+	font-size: 15px;
+	width: auto;
+	background: none;
+	margin: 0;
+	padding: 5px 0;
+	color: #FFFFFF;
+}
+
+/* Image */
+
+img {
+	width: 290px;
+	height: 400px;
+}
+
+/* Table */
+
+table {
+	width: 100%;
+	margin: 0 0 50px 0;
+}
+
+th {
+	font-size: 20px;
+	font-family: 'Source Sans Pro', sans-serif;
+	color: #ffffff;
+}
+
+td {
+	font-size: 15px;
+	font-family: 'Assistant', sans-serif;
+	color: #f9f9f9;
+}
+
+th, td {
+	padding: 7px 5px 0 5px;
+}
+
+/* Buttons */
+
+#searchButton {
+	margin: 0 0 0 10px;
+	padding: 11px 26px;
+	font-size: 18px;
+}
+
+#addFavorites {
+	font-size: 20px;
+	height: 50px;
+	float: right;
+	padding: 0 10px 0 10px;
+}
+
+.edit {
+	font-size: 13px;
+	padding: 9px 20px;
+	border: none;
+}
+
+.delete {
+	font-size: 13px;
+	padding: 9px 12px;
+	margin: 0.25px;	
+}
+
+#searchButton, 
+#addFavorites, 
+.edit, 
+.delete {
+	background: #565454;
+	text-align: center;
+	transition: .5s;
+	color: #FFFFFF;
+	font-family: 'Assistant', sans-serif;
+	border: none;
+	opacity: .6;
+}
+
+
+#searchButton:hover, 
+#addFavorites:hover, 
+.edit:hover, 
+.delete:hover {
+	opacity: .7;
+	background: #7a7777;
+	transition: .5s;
+}
+
+/* Movie information */
+
+#details {
+	flex: 2;
+	background: url("../images/beige.png");
+	height: 360px;
+	padding: 20px 40px 20px 40px;
+	overflow: hidden;
+}
+
+#release, #genres {
+	font-size: 17px;
+	font-family: 'Source Sans Pro', sans-serif;
+}
+
+#plot {
+	font-size: 18px;
+}
+
+#votes {
+	background-color: #282626;
+	width: 145px;
+	height: 45px;
+	text-align: center;
+	font-family: 'Source Sans Pro', sans-serif;
+	padding: 5px 0 0 0;
+}
+
+#cast {
+	flex: 6;
+	background: url("../images/beige.png");
+	height: 50px;
+}
+
+#genreSelection {
+	float: right;
+	text-align: center;
+}
+
+#selectGenre {
+	width: 300px;
+	height: 30px;
+	border: none;
+	margin: 10px 0 30px 0;
+	font-size: 14px;
+	display: inline-block;
+}
+
+#poster {
+	background-color: #282626;
+	width: 290px;
+	height: 400px;
+}
+
+#favorites {
+	flex: 1;
+	background-color: #282626;
+	height: auto;
+	border: solid 2px #282626;
+	border-radius: 20px;
+	opacity: 1;
+	transition: 1s;
+}
+
+/* Classes to reuse */
+
+.flex {
+	display: flex;
+}
+
+.f1 {
+	flex: 1;
+}
+
+.b {
+	text-align: center;
+}
+
+.center {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.wrapper {
+	display: flex;
+	margin: 50px;
+	transition: 1s;
+}
+
+.watch {
+	display: inline-block;
+	width: 150px;
+	height: 220px;
+}
+
+.move {
+	width: 100%;
+	height: 250px;
+	overflow-x: scroll;
+}
+
+.posterWL {
+	width: 120px;
+	height: 170px;
+}
+
+#voteAverage, #voteTotal {
+	color: #FFFFFF;
+}
+
+/* Responsive Design */
+
+@media (max-width: 900px)  {
+	th, td {
+		padding: 7px 1px 0 1px;
+	}
+
+	th {
+		font-size: 15px;
+	}
+
+	td {
+		font-size: 14px;
+	}
+
+	input.e[type="text"] {
+		font-size: 14px;
+    }
+
+	.wrapper {
+		flex-direction: column;
+		text-align: center;
+		display: block;
+		margin: 50px 0px;
+		transition: 1s;
+	}
+	#poster {
+		width: 100%;
+	}
+  	#details {
+		width: 100%;
+		padding: 0px;
+		min-height: 360px;
+		height: auto;
+		text-align: left;
+	}
+	#votes {
+		width: 100%;
+	}
+	#favorites{
+		width: 100%;
+		margin: 0;
+		border-radius: 0;
+		transition: 1s;
+	}
+	#votes {
+		width: 100%;
+	}
+	.edit {
+		margin-bottom: .5px;
+	}
+	.edit, .delete {
+		display: block;
+	}
 }
