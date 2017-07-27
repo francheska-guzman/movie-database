@@ -43,6 +43,24 @@ app.use(function(req, res, next) {
   next(err);
 });
 
+app.get('/', function(req, res) {
+  res.render('index', { title: 'Movie Finder' })
+});
+
+// error handlers
+
+// development error handler
+// will print stacktrace
+if (app.get('env') === 'development') {
+    app.use(function(err, req, res, next) {
+        res.status(err.status || 500);
+        res.render('error', {
+            message: err.message,
+            error: err
+        });
+    });
+}
+
 // error handler
 app.use(function(err, req, res, next) {
   // set locals, only providing error in development
