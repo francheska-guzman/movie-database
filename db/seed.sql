@@ -1,8 +1,3 @@
-DROP DATABASE IF EXISTS moviedb;
-CREATE DATABASE moviedb;
-
-\c moviedb;
-
 CREATE TABLE favorites (
   ID SERIAL PRIMARY KEY,
   title VARCHAR(255),
