@@ -9,20 +9,16 @@
   "dependencies": {
     "bluebird": "^3.5.0",
     "body-parser": "~1.17.1",
-    "cookie-parser": "~1.4.3",
+    "cookie-parser": "^1.4.3",
+    "cors": "^2.8.3",
     "debug": "~2.6.3",
     "dotenv": "^4.0.0",
-    "ejs": "~2.5.6",
-    "express": "^4.15.3",
-    "express-search": "^1.0.3",
-    "express-simple-search": "^0.3.1",
-    "gulp": "^3.9.1",
+    "ejs": "^2.5.6",
+    "express": "~4.15.2",
     "morgan": "~1.8.1",
-    "mustache": "^2.3.0",
-    "pg": "^6.1.0",
+    "node-sass-middleware": "0.9.8",
     "pg-promise": "^5.9.7",
-    "serve-favicon": "~2.4.2",
-    "themoviedb-javascript-library": "^1.0.0"
+    "serve-favicon": "^2.4.3"
   },
   "devDependencies": {
     "nodemon": "^1.11.0"
