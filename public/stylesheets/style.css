@@ -235,7 +235,6 @@ td {
 .wrapper {
 	display: flex;
 	margin: 50px;
-	transition: 1s;
 }
 
 .watch {
