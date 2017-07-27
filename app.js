@@ -65,6 +65,11 @@ app.use(function(req, res, next) {
   next(err);
 });
 
+// bind the app to listen for connections on a specified port
+var port = process.env.PORT || 3000;
+app.listen(port);
+
+
 // error handler
 app.use(function(err, req, res, next) {
   // set locals, only providing error in development
