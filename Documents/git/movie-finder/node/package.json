@@ -2,8 +2,11 @@
   "name": "node",
   "version": "0.0.0",
   "private": true,
+  "engines": {
+    "node": "8.0.0"
+  },
   "scripts": {
-    "start": "node ./bin/www"
+    "start": "node server.js"
   },
   "dependencies": {
     "body-parser": "~1.17.1",
