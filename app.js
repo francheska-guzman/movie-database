@@ -8,7 +8,6 @@ var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
 //CORS (Cross Origin Resource Sharing)is a node.js package for providing a Connect/Express middleware that can be used to enable CORS with various options.
 var cors = require('cors');
-var sassMiddleware = require('node-sass-middleware');
 
 var index = require('./routes/index');
 var users = require('./routes/users');
