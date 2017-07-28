@@ -19,6 +19,7 @@
     "express": "^4.15.3",
     "morgan": "~1.8.1",
     "pg-promise": "^5.9.7",
+    "promise": "^8.0.1",
     "serve-favicon": "^2.4.3"
   },
   "engines": {
