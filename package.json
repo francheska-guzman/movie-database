@@ -5,7 +5,7 @@
   "description": "A movie database application.",
   "main": "app.js",
   "scripts": {
-    "start": "node app.js",
+    "start": "node ./bin/www",
     "startDev": "nodemon ./bin/www"
   },
   "dependencies": {
