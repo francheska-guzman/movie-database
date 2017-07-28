@@ -86,14 +86,14 @@ After get the search working. Then, implement CRUD functionality in Favorites Li
 
 While creating the application, I will be adding details about how I implement each one:
 
-* EJS
+* HTML
 * CSS
 * JavaScript
 * jQuery
+* EJS
 * Node.js
 * Express
 * Third Party API
 * PostgreeSQL
-* Chrome Developer Tools
 
 ### [GO BACK TO THE TABLE OF CONTENT](#tableofcontent)
