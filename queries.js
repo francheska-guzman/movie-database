@@ -30,7 +30,7 @@ function getAllFavorites(req, res, next) {
 
 // Read One (Filter by genre is not working...)
 function getOneFavorite(req, res, next) {
-  let genre = req.query.genre;
+  var genre = req.query.genre;
   db.any('SELECT * FROM favorites WHERE genre LIKE $1', [`'%`+genre+`%'`])
   .then(function (data) {
     res.render('index', {         
@@ -40,8 +40,8 @@ function getOneFavorite(req, res, next) {
 
 // Update (Users only update the comment.)
 function editFavorites(req, res, next) {
-  let id = parseInt(req.params.id);
-  let comment = req.body.comment;
+  var id = parseInt(req.params.id);
+  var comment = req.body.comment;
   db.none('UPDATE favorites SET comment = $1 WHERE id = $2', [comment, id])
     .then(function(){
     res.status(200)
@@ -49,7 +49,7 @@ function editFavorites(req, res, next) {
 
 // Delete
 function deleteFavorites(req, res, next){
-  let id = parseInt(req.params.id);
+  var id = parseInt(req.params.id);
   db.result('DELETE FROM favorites WHERE id = $1', id)
 };
 
