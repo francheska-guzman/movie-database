@@ -5,9 +5,9 @@ var options = { promiseLib: promise };
 
 var pgp = require('pg-promise')(options);
 
-// let connectionString = 'postgres://localhost:5432/moviedb';
-let connectionString = process.env.DATABASE_URL;
-let db = pgp(connectionString);
+// var connectionString = 'postgres://localhost:5432/moviedb';
+var connectionString = process.env.DATABASE_URL;
+var db = pgp(connectionString);
 
 // FAVORITES
 
