@@ -34,15 +34,16 @@
     <% if (data) { %>
     </form>
         <table>
-          <th>Title</th>
-          <th>Release Date</th>
-          <th>Genre(s)</th>
-          <th>Raiting</th>
-          <th>Comment</th>
-          <th>Action</th>
           <tr>
+            <th>Title</th>
+            <th>Release Date</th>
+            <th>Genre(s)</th>
+            <th>Raiting</th>
+            <th>Comment</th>
+            <th>Perform an Action</th>
+          </tr>
           <% data.forEach ( d => { %>
-            <tr data-id=<%=d.id%>>
+          <tr data-id=<%=d.id%>>
             <td data-id=<%=d.id%> class="f1"><%= d.title %></td>
             <td data-id=<%=d.id%> class="f1"><%= d.release %></td>
             <td data-id=<%=d.id%> class="f1"><%= d.genre %></td>
@@ -52,6 +53,7 @@
             <td data-id=<%=d.id%> class="f1 b">
             <span class="edit">EDIT</span>
             <span class="delete">DELETE</span></td>
+          </tr>
           <% }) %>
         </table>
       <% } %>

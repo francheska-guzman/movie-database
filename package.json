@@ -17,8 +17,9 @@
     "dotenv": "^4.0.0",
     "ejs": "^2.5.6",
     "express": "^4.15.3",
+    "generic-pool": "^3.1.7",
     "morgan": "~1.8.1",
-    "pg": "*",
+    "pg": "^7.0.2",
     "pg-promise": "^5.9.7",
     "promise": "^8.0.1",
     "serve-favicon": "^2.4.3"
