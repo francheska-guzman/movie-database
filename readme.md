@@ -11,6 +11,7 @@
 7. [Pseudocode](#step5)
 8. [Approach taken](#approach)
 9. [Technologies used](#technologies)
+10. [Cross-browser compatibility](#compatibility)
 
 ## <a id="about">About the project</a>
 
@@ -95,5 +96,15 @@ While creating the application, I will be adding details about how I implement e
 * Express
 * Third Party API
 * PostgreeSQL
+
+## <a id="compatibility">Cross-browser compatibility</a>
+
+This site has been tested in the following browsers:
+
+Chrome – Version 59.0.3071.115 
+
+Firefox – Version 54.0.1
+
+Safari – Version 9.1.2
 
 ### [GO BACK TO THE TABLE OF CONTENT](#tableofcontent)
