@@ -1,4 +1,4 @@
-# <a name="tableofcontent">Movie Finder</a>
+# <a id="project">Movie Finder</a>
 
 ### Table of Contents
 
@@ -107,4 +107,4 @@ Firefox – Version 54.0.1
 
 Safari – Version 9.1.2
 
-### [GO BACK TO THE TABLE OF CONTENT](#tableofcontent)
+#### [Go back to the Table of Contents](#project)
