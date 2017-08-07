@@ -39,8 +39,6 @@ My proposal for the second project, is develop a movie database application, whe
 
 If time permitting, I would like to add a navigation bar, so user can make a search by genre, top rated, and so on. Also, create an authentication log in that enables me to identify an user, and display their favorite movie list and watchlist (so my database will have multiple users).
 
-#### API: https://www.themoviedb.org/documentation/api
-
 ## <a name="step2">Step 2: User Stories</a>
 
 1. As a user who wants to find information about a movie, I want to get access to a movie database search.
@@ -93,8 +91,8 @@ While creating the application, I will be adding details about how I implement e
 * jQuery
 * EJS
 * Node.js
-* Express
-* Third Party API
+* Express.js
+* Third Party API – [themoviedb.org](https://www.themoviedb.org/documentation/api)
 * PostgreeSQL
 
 ## <a id="compatibility">Cross-browser compatibility</a>
